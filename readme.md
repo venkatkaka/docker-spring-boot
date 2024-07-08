@@ -11,7 +11,7 @@ Tested with
 
 ## How to run this?
 ```bash
-$ git clone https://github.com/venkat/docker-java
+$ git clone https://github.com/venkatkaka/docker-spring-boot
 $ cd docker-spring-boot
 $ mvn clean package
 $ java -jar target/spring-boot-web.jar
