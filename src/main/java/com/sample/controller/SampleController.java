@@ -8,6 +8,13 @@ import org.springframework.web.bind.annotation.RestController;
 public class SampleController {
 
      @GetMapping("/hello")
+    public String hello(final Model model) {
+        model.addAttribute("title", "Openshift + Spring Boot");
+        model.addAttribute("msg", "Welcome to the Openshift platform!");
+        return "index";
+    }
+
+    @GetMapping("/")
     public String index(final Model model) {
         model.addAttribute("title", "Openshift + Spring Boot");
         model.addAttribute("msg", "Welcome to the Openshift platform!");
